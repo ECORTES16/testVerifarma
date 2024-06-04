@@ -78,6 +78,9 @@
       methods: {
        async onSubmit () {
             try{
+                // para el login se realizo una logica para aprovechar la consulta de alguna pelicula, entonces como user se utilizara el 
+                // titulo de la pelicula y para el password el imdbID de la pelicula 
+
                 if (!this.form) return
                 this.loading = true
                 const response = await axios({
